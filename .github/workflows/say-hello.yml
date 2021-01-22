@@ -1,0 +1,16 @@
+name: Say Hello
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Show current directory
+        run: |
+          pwd
+          ls -l
+      - name: Verify hello action works
+        uses: ./
