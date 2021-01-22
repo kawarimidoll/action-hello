@@ -1,2 +1,2 @@
-# action-helo
+# action-hello
 minimum github action
